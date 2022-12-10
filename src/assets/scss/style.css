@@ -1,0 +1,43 @@
+body[data-layout="horizontal"] .margin-custom {
+    margin-top: 30px !important;
+    /* padding: calc(55px + 24px) calc(24px * 0.5) 60px calc(24px * 0.5);
+    height: calc(100vh - 130px);
+    display: flex;
+    align-items: center; */
+}
+body[data-sidebar="dark"] .vertical-menu,body[data-sidebar="dark"] .navbar-brand-box {
+    background: #000 !important;
+}
+
+ul#side-menu {
+    height: calc(100vh - 121px);
+    padding-bottom: 30px;
+    overflow: auto;
+}
+.logout_button {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #3e3b3b;
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    padding: 0.625rem 1.5rem;
+    color: #545a6d;
+    font-size: 13px;
+    transition: all .4s;
+}
+.logout_button i {
+    min-width: 2rem;
+}
+
+body[data-sidebar="dark"] #sidebar-menu ul li.setting-active a, body[data-sidebar="dark"] #sidebar-menu ul li.setting-active a i {
+    background: #000000 !important;
+    color: #a6b0cf !important;
+}
+body[data-sidebar="dark"] #sidebar-menu ul li.mm-active a,body[data-sidebar="dark"] #sidebar-menu ul li:hover a, body[data-sidebar="dark"] #sidebar-menu ul li.mm-active a i, .logout_button:hover {
+    color: #fff;
+    background: #ed1c24;
+}
+ol.breadcrumb.m-0{
+    display: none;
+}

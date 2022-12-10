@@ -1,0 +1,30 @@
+.create-vendor .invalid-feedback{
+    display: block !important;
+}
+.custom-error-val .invalid-feedback{
+    display: block !important;
+}
+.toast-top-right{
+    background-color: white !important;
+}
+.mytoggle input[switch] + label {
+    width: 82px;
+}
+.mytoggle input[switch]:checked + label:after {
+    left: 59px;
+}
+.dashboard-box .card-body {
+    padding: var(--bs-card-spacer-y) 14px;
+}
+.dashboard-box .card {
+    margin-bottom: 0px !important;
+}
+.dashboard-table table td{
+    padding: 6px 0px;
+}
+.search-box .form-control {
+    border-radius: 4px !important;
+}
+.custom-form .jodit-wysiwyg{
+    min-height: 301px !important;
+}

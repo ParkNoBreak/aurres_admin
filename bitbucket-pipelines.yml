@@ -1,0 +1,21 @@
+image: node:16
+
+options:
+ max-time: 10
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Install Dependencies & Build Project
+          size: 2x
+          caches:
+            - node
+          script:
+            - npm install -f
+            - CI=false npm run build
+          artifacts:
+            - build/**
+      - step:
+          name: Deploy to master
+          script:
+            - scp -pvr build/* cbdev@147.182.160.178:/var/www/html/aurres_admin
